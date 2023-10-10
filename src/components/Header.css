@@ -1,0 +1,28 @@
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  width: 100%;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+  background-color: white;
+  margin: auto;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+li {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.direita {
+    margin-right: 30px;
+}

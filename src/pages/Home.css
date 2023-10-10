@@ -1,0 +1,30 @@
+.home-inner {
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.text {
+    max-width: 600px;
+}
+
+ul {
+    padding: 0;
+   list-style-type: none;
+}
+
+.tags li {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.project-button {
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 20px; 
+    font-size: large;
+}

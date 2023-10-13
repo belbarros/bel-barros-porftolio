@@ -1,8 +1,9 @@
-.home-inner {
+.projects-inner {
     border: 1px solid black;
-    margin: 20px auto;
+    margin: 20px 4%;
     padding: 20px 40px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 10px;
     align-items: center;
@@ -11,32 +12,10 @@
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
-.text {
-    max-width: 600px;
-}
-
-ul {
-    padding: 0;
-   list-style-type: none;
-}
-
-.tags li {
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 5px 10px;
-    display: inline-block;
-    text-align: center;
-}
-
-.project-button {
+.home-button {
     background-color: white;
     padding: 10px 20px;
     border: 1px solid black;
     border-radius: 20px; 
     font-size: large;
-}
-
-.img img {
-    width: 500px;
-    border: 1.5px solid black;
 }

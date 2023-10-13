@@ -2,15 +2,17 @@ import Header from "../components/Header";
 import { Link } from "react-router-dom";
 import "./Home.css";
 
+let img = require("../img/port-pic.jpeg");
+
 export default function Home() {
   return (
-    <div>
+    <div className="home">
       <Header />
       <div className="home-inner">
         <div className="text">
           <div className="headline">
-            <h1>Olá,</h1>
-            <h1>sou a Bel!</h1>
+            <h1>Oie,</h1>
+            <h1>eu sou a Bel!</h1>
           </div>
           <div className="about-me">
             <h2>Front-End Developer && UI Designer.</h2>
@@ -41,13 +43,13 @@ export default function Home() {
                 <li>behance</li>
             </ul>
           </div>
-        </div>
-        <div className="img">
-            <img src="" alt="" />
-        </div>
-        <Link to="/projetos">
+          <Link to="/projetos">
           <button className="project-button">Projetos →</button>
         </Link>
+        </div>
+        <div className="img">
+            <img src={img} alt="" />
+        </div>
       </div>
     </div>
   );

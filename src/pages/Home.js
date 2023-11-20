@@ -15,14 +15,14 @@ export default function Home() {
             <h1>eu sou a Bel!</h1>
           </div>
           <div className="about-me">
-            <h2>Front-End Developer && UI Designer.</h2>
+            <h2>Front-End Developer && Designer.</h2>
             <h3>
-              Apaixonada por criar e construir produtos de Front-End com design
+              Apaixonada por arte e tecnologia, busco criar e construir produtos de Front-End com design
               atrativo e com uma experiência de usuário bem planejada.
             </h3>
-            <h4>Fullstack Developer pela Trybe</h4>
+            <h4>Fullstack Developer pela Trybe.</h4>
             <h4>
-              Bacharel em Design pela Universidade Federal de Santa Catarina
+              Bacharel em Design pela Universidade Federal de Santa Catarina.
             </h4>
           </div>
           <div className="tags">
@@ -37,10 +37,9 @@ export default function Home() {
             </ul>
           </div>
           <div className="redes">
-            <ul>
-                <li>github</li>
-                <li>linkedin</li>
-                <li>behance</li>
+            <ul> Estou:
+                <li><a href="https://github.com/belbarros">no github</a></li>
+                <li><a href="https://www.linkedin.com/in/belbarros/">no linkedin</a></li>
             </ul>
           </div>
           <Link to="/projetos">
@@ -48,7 +47,7 @@ export default function Home() {
         </Link>
         </div>
         <div className="img">
-            <img src={img} alt="" />
+            <img src={img} alt="Uma foto minha, com flores no fundo. Estou de oculos escuros, olhando para o lado e sorrindo." />
         </div>
       </div>
     </div>

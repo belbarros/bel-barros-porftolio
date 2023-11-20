@@ -1,42 +1,87 @@
 .home-inner {
-    border: 1px solid black;
-    margin: 20px auto;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    align-items: center;
-    max-width: 1300px;
-    background-color: #f5ead9;
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  border: 1px solid black;
+  margin: 20px 4%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  max-width: 1300px;
+  background-color: #f5ead9;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  color: #353535;
 }
 
 .text {
-    max-width: 600px;
+  max-width: 600px;
+}
+
+.headline {
+  margin-bottom: 30px;
+}
+
+h1 {
+  line-height: 10px;
+}
+
+.about-me h3 {
+  line-height: 24px;
+}
+
+.about-me h4 {
+  line-height: 10px;
 }
 
 ul {
-    padding: 0;
-   list-style-type: none;
+  padding: 0;
+  list-style-type: none;
 }
 
 .tags li {
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 5px 10px;
-    display: inline-block;
-    text-align: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 10px;
+  display: inline-block;
+  text-align: center;
+  margin: 5px;
+}
+
+.redes a {
+  text-decoration: none;
+  color: #353535;
+  display: inline-block;
+  position: relative;
+}
+
+.redes a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f7ce68;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.redes a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .project-button {
-    background-color: white;
-    padding: 10px 20px;
-    border: 1px solid black;
-    border-radius: 20px; 
-    font-size: large;
+  background-color: white;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: large;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 .img img {
-    width: 500px;
-    border: 1.5px solid black;
+  width: 500px;
+  border: 1.5px solid black;
 }

@@ -1,0 +1,40 @@
+.project-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.project-card-inner {
+    border: 1px solid black;
+    margin: 20px auto;
+    padding: 20px 40px;
+    max-width: 400px;
+    background-color: white;
+    display: inline-block;
+}
+
+.project-card-inner img {
+   max-width: 315px;
+}
+
+ul {
+    padding: 0;
+   list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.tag {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px 10px;
+    display: inline-block;
+    text-align: center;
+}
+

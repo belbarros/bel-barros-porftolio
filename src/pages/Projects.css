@@ -28,6 +28,36 @@
     gap: 10px;
 }
 
+.links button {
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 24px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 16px;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+}
+
+.links button:focus {
+  background-color: #f7ce68;
+  outline: 0;
+}
+
+.links button:hover {
+  outline: 0;
+  background-color: #fbab7e;
+}
+
+
 .home-button {
     background-color: white;
     padding: 10px 20px;

@@ -6,24 +6,24 @@ import projects from "../content/projects";
 import "./Projects.css";
 
 export default function Projects() {
-    const [frontFilter, setFrontFilter] = useState(true);
+  const [frontFilter, setFrontFilter] = useState(true);
 
-    useEffect(() => {
-        filterContent();
-    }, [frontFilter]);
-    
-    
-    const filterContent = () => {
-        let content = projects;
-        
-        if (!frontFilter) {
-            content = projects.filter((project) => project.tags.includes('projeto pessoal'));
-            console.log(content)
-        }
-        return content;
+  useEffect(() => {
+    filterContent();
+  }, [frontFilter]);
+
+  const filterContent = () => {
+    let content = projects.filter((project) =>
+      project.tags.includes("front-end")
+    );
+
+    if (!frontFilter) {
+      content = projects.filter((project) => project.tags.includes("back-end"));
     }
-    
-    let siteContent = filterContent();
+    return content;
+  };
+
+  let siteContent = filterContent();
 
   return (
     <div className="projects">
@@ -31,11 +31,13 @@ export default function Projects() {
       <div className="projects-inner">
         <h1>Projetos</h1>
         <div className="links">
-            <button onClick={() => setFrontFilter(true)}>front-end</button>
-            <button onClick={() => setFrontFilter(false)}>back-end && fullstack</button>
+          <button onClick={() => setFrontFilter(true)}>front-end</button>
+          <button onClick={() => setFrontFilter(false)}>
+            back-end && fullstack
+          </button>
         </div>
         <div className="project-cards">
-            {console.log(siteContent)}
+          {siteContent.length === 0 && <p>Ops! Nenhum projeto para exibir.</p>}
           {siteContent.map((project) => (
             <ProjectCard project={project} key={project.name} />
           ))}

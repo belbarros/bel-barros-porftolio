@@ -22,7 +22,7 @@ const projects = [
   },
   {
     name: "to-do list",
-    link: "",
+    link: "https://to-do-list-sigma-lemon.vercel.app/",
     repository: "https://github.com/belbarros/to-do-list",
     description: "Simples aplicação de lista de afazeres, utilizando contextAPI para gerenciar seu estado.",
     img: "",
@@ -63,7 +63,34 @@ const projects = [
     description: "Lista com filtros de planetas do universo de Star Wars usando Context API e Hooks para controlar os estados globais. Desenvolvido como projeto do módulo de Front-End da Trybe!",
     img: "",
     tags: ["front-end", "react", "context-api", "trybe"]
-
+  },
+  {
+    name: "talker manager",
+    repository: "https://github.com/belbarros/talker-manager",
+    description: "API de cadastro de palestrantes. Desenvolvido como projeto do módulo de Back-End da Trybe!",
+    img: "",
+    tags: ["back-end", "node.js", "express", "API", "trybe"]
+  },
+  {
+    name: "all for one",
+    repository: "https://github.com/belbarros/all-for-one",
+    description: "Projeto para fixação do conteúdo de MySQL, praticando a criação de queries. Desenvolvido como projeto do módulo de Back-End da Trybe!",
+    img: "",
+    tags: ["back-end", "mySQL", "banco de dados", "trybe"]
+  },
+  {
+    name: "one for all",
+    repository: "https://github.com/belbarros/one-for-all",
+    description: "Projeto para fixação do conteúdo de MySQL, agora para praticar a criação de queries mais complexas e a normalização de um banco não normalizado. Desenvolvido como projeto do módulo de Back-End da Trybe!",
+    img: "",
+    tags: ["back-end", "mySQL", "banco de dados", "trybe"]
+  },
+  {
+    name: "docker to-do list",
+    repository: "https://github.com/belbarros/docker-todo-list",
+    description: "Projeto de fixação dos conhecimentos da ferramenta Docker, onde foram criados containers para aplicação front-end, back-end e a sua conexão para funcionarem juntos. Desenvolvido como projeto do módulo de Back-End da Trybe!",
+    img: "",
+    tags: ["back-end", "fullstack", "docker", "trybe"]
   }
 ];
 
@@ -72,3 +99,4 @@ export default projects;
 // Pegar os projetos que faltam na Trybe.
 // https://github.com/tryber/sd-022-a-project-shopping-cart
 // https://github.com/tryber/sd-022-a-project-frontend-online-store
+// ** Checar os de back-end também.
